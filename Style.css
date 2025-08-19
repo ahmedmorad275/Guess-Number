@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #111;
+  color: #fff;
+  font-family: 'Press Start 2P', system-ui;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2.5rem;
+  padding: 2.5rem 0;
+}
+
+.header {
+  display: flex;
+  gap: 7.5rem;
+}
+
+.limit {
+  font-size: 0.7rem;
+}
+.main {
+  text-align: center;
+}
+
+.secret {
+  margin: 3rem auto 2rem;
+  background-color: #fff;
+  color: #111;
+  width: 10rem;
+  padding: 2rem 0;
+  font-size: 1.5rem;
+}
+
+.btn {
+  cursor: pointer;
+  font-family: inherit;
+  width: 10rem;
+  padding: 1rem 0;
+  background-color: #fff;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #ffffffee;
+}
+
+.result {
+  display: flex;
+  gap: 7.5rem;
+}
+
+.user-num {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.number {
+  font-family: inherit;
+  width: 12rem;
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  background-color: inherit;
+  border: 2px solid #fff;
+}
+
+.number:focus {
+  border: 2px solid #fff;
+  outline: none;
+}
+
+.scores {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.check {
+  align-self: center;
+}
+
+
+@media (max-width:625px) {
+  .container {
+    max-width: 90%;
+  }
+  .header {
+    margin: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+
+  .again {
+    margin: auto;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .result{
+    flex-direction: column;
+  }
+
+  .number {
+    margin: auto  ;
+  }
+}
