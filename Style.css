@@ -83,6 +83,10 @@ body {
   outline: none;
 }
 
+.number::placeholder{
+  font-size: 0.6rem;
+
+}
 .scores {
   display: flex;
   flex-direction: column;
